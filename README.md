@@ -49,3 +49,18 @@ Deploy the DaemonSet with the command:
 ```
 kubectl apply -f datadog-agent.yaml
 ```
+
+# Step 6 - Verify Daemonset 
+
+Verification: To verify the Datadog Agent is running in your environment as a DaemonSet, execute:
+
+```
+kubectl get daemonset
+```
+
+If the Agent is deployed, output similar to the text below appears, where DESIRED and CURRENT are equal to the number of nodes running in your cluster.
+
+```
+NAME            DESIRED   CURRENT   READY     UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
+datadog-agent   2         2         2         2            2           <none>          10s
+```
