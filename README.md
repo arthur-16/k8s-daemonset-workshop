@@ -1,4 +1,4 @@
-# k8s-daemonset-workshop
+# k8s-daemonset-workshop (with basic log collection)
 
 # Preliminary steps
 
